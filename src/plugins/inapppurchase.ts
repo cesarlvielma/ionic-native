@@ -7,6 +7,21 @@ import { Plugin, Cordova } from './plugin';
  * A lightweight Cordova plugin for in app purchases on iOS/Android.
  *
  * @usage
+ * #### Android Configuration
+ * Add to src/manifest.json your app billing key. You can get this key from the Google Play Store (under "Services & APIs") after uploading your app.
+ * ```
+ * {
+ * "name": "Ionic",
+ * "short_name": "Ionic",
+ * "start_url": "index.html",
+ * ...
+ * "play_store_key": "<your_app_billing_key>"
+ * }
+ * ```
+ *
+ * #### iOS configuration
+ * No configuration is necessary.
+ *
  * ```ts
  * import {InAppPurchase} from 'ionic-native';
  *
